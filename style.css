@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(176, 210, 222);
+
+}
+
+h1 {
+    color: rgb(105, 105, 234)
+}
+
+ul li:hover {
+    color: darkorchid;
+}
+
+/**Child-Selector**/
+ul>li {
+    font-weight: bold;
+}
+
+/**Sibling-Selector**/
+h2+p {
+    background-color: blanchedalmond;
+    color: cadetblue;
+}
+
+ul>li:nth-child(4) {
+    color: rgba(30, 224, 12, 0.808);
+}
+
+ul>li::before {
+    content: "🚀 "
+}
+
+a {
+    color: blanchedalmond;
+    text-decoration: none;
+
+}
+
+
+a::after {
+    content: " 🌌"
+}
+
+p::first-letter {
+    font-size: 30px;
+    color: red
+}
